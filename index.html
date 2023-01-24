@@ -1,125 +1,273 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Page</title>
-  <style>
-    /* Add some basic styling */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+    <meta charset="utf-8">
+
+    <!-- begin SEO -->
+
+
+    <title>Lai Wei - Homepage</title>
+
+
+    <meta property="og:locale" content="en">
+    <meta property="og:site_name" content="Lai Wei">
+    <meta property="og:title" content="Lai Wei">
+
+
+    <link rel="canonical" href="https://waltonfuture.github.io/">
+    <meta property="og:url" content="https://waltonfuture.github.io/">
+
+
+    <meta property="og:description" content="Third-year Bachelor at SJTU.">
+
+
+    <!-- end SEO -->
+
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+    </script>
+
+    <!-- For all browsers -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <meta http-equiv="cleartype" content="on">
+    <head>
+        <base target="_blank">
+    </head>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="images/mstile-144x144.png?v=M44lzPylqQ">
+    <meta name="msapplication-config" content="images/browserconfig.xml?v=M44lzPylqQ">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="assets/css/academicons.css"/>
+
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
+    </script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
     }
-    header {
-      background-color: #f5f5f5;
-      padding: 20px;
-    }
-    h1 {
-      margin: 0;
-    }
-    section {
-      margin: 30px 0;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .my-picture {
-      width: 200px;
-      height: 200px;
-      display: block;
-      margin: 0 auto;
-    }
-  </style>
+  });
+
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+    <!-- end custom head snippets -->
+
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <h1>My Personal Page</h1>
-    </div>
-  </header>
-  <section>
-    <div class="container">
-      <h2>About Me</h2>
-      <img src="https://img1.imgtp.com/2023/01/23/41SE7Zl6.jpg" alt="My Picture" class="my-picture">
-      <p>
-        Hi, my name is Lai Wei (魏来) and I am a junior student at SJTU, majoring in physics. I have a strong interest in artificial intelligence, 
-        and have been working on NLP during my bachelor studies. I dedicate to staying current with the latest developments in NLP and 
-        am constantly seeking new ways to innovate in this area and push the boundaries 
-        of what is possible with AI. As a creative and curious individual, I am eager to apply my skills and knowledge to real-world problems and make a meaningful impact in the industry.
-        My recent research focuses on the improvement of BART(a pretrained language model)'s decoder for better
-        performance on natural language understanding and I intend to apply for an AI master/phd degree next year.
-      </p>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <h2>Education</h2>
-      <ul>
-        <li>
-          <strong>Shanghai Jiao Tong University</strong>
-          <br>
-          Bachelor of Science in Physics
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <h2>Research and Work Experience</h2>
-      <ul>
-        <li>
-          <strong>Research on Improving the natural language understanding capabilities of the pre-trained model BART</strong>
-          
-          <br>
-          Worked on modifying the decoder of BART to enhance its natural language understanding capabilities. Five different types of decoders streams, designed by 
-          changing the attention masks and input ids, replace the initial BART decoder. The model is pretrained on wiki-text and book corpus, and fine-tuned on GLUE, SquaD, etc.
-        </li>
-        <li>
-            <strong>Completed several data mining and NLP projects and basic NLP tutorials</strong>
-            
-            <br>
-            Please visit my github repositories <a href="https://github.com/waltonfuture/NLP-projects" target="_blank">NLP-projects</a> 
-            and <a href="https://github.com/waltonfuture/NLP_basic" target="_blank">NLP-basic-tutorials</a>
-            for details.
-          </li>
-      </ul>
-    </div>
-  </section>
-  
-   <section>
-    <div class="container">
-      <h2>Awards and Honors</h2>
-      <ol>
-        <li>2021 China Undergraduate Mathematical Contest in Model, Shanghai Division, First Prize</li>
-        <li>2022 Mathematical Contest in Modeling, Second Prize</li>
-        <li>2020 National Undergraduate Physics Experiment Competition, Third Prize</li>
-        <li>2021 Shanghai Jiao Tong University Undergraduate B Scholarship</li>
-        <li>2021 Shanghai Jiao Tong University, School of Physics and Astronomy, Online Class First Prize Scholarship</li>
-        <li>2022 Shanghai Jiao Tong University Undergraduate B Scholarship</li>
-        <li>2022 Shanghai Jiao Tong University Huawei Scholarship</li>
-      </ol>
-    </div>
-  </section>
 
-  <section>
-    <div class="container">
-  <h2>Interests and Hobbies</h2>
-  <ul>
-    <li>Electronic Organ (Grade 8)</li>
-    <li>Basketball (Captain of College Basketball Team)</li>
-    <li>Football (Member of College Football Team)</li>
-  </ul>
-      </div>
-</section>
+<!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+<div class="masthead">
+    <div class="masthead__inner-wrap">
+        <div class="masthead__menu">
+            <nav id="site-nav" class="greedy-nav">
+                <button>
+                    <div class="navicon"></div>
+                </button>
+                <ul class="visible-links">
+                    <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a
+                            href="#about-me">Homepage</a></li>
 
-  <section>
-    <div class="container">
-      <h2>Contact</h2>
-      <p>
-        Email: waltonfuture@sjtu.edu.cn
-        <br>
-        Phone: 18218416829
-      </p>
+                    <li class="masthead__menu-item"><a href="/#-about-me">About Me</a></li>
+
+                    <li class="masthead__menu-item"><a href="/#-honors-and-awards">Honors and Awards</a></li>
+
+                    <li class="masthead__menu-item"><a href="/#-educations">Educations</a></li>
+
+                    <li class="masthead__menu-item"><a href="/#-invited-talks">Research and Work Experience</a></li>
+
+                    <li class="masthead__menu-item"><a href="/#-internships">Interests and Hobbies</a></li>
+
+                </ul>
+                <ul class="hidden-links hidden"></ul>
+            </nav>
+        </div>
     </div>
-  </section>
+</div>
+
+<div id="main" role="main">
+
+    <div class="sidebar sticky">
+
+
+        <div itemscope itemtype="http://schema.org/Person" class="profile_box">
+
+            <div class="author__avatar">
+                <img src="https://img1.imgtp.com/2023/01/23/41SE7Zl6.jpg" class="author__avatar" alt="Lai Wei">
+            </div>
+
+            <div class="author__content">
+                <h3 class="author__name">Lai Wei</h3>
+
+            </div>
+
+            <div class="author__urls-wrapper">
+                <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
+                <ul class="author__urls social-icons">
+
+                    <li>
+                        <div style="white-space: normal; margin-bottom: 1em;">Third-year Bachelor at SJTU.</div>
+                    </li>
+
+
+                    <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Shenzhen, China</li>
+
+
+                    <li><a href="waltonfuture@sjtu.edu.cn"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a>
+                    </li>
+
+
+                    <li><a href="https://github.com/waltonfuture"><i class="fab fa-fw fa-github" aria-hidden="true"></i>
+                        Github</a></li>
+
+
+
+
+                </ul>
+                <div class="author__urls_sm">
+
+
+                    <a href="waltonfuture@sjtu.edu.cn"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>
+
+
+                    <a href="https://github.com/waltonfuture"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+        <meta itemprop="headline" content="">
+        <div class="page__inner-wrap">
+            <section class="page__content" itemprop="text">
+
+                <p><span class="anchor" id="about-me"></span></p>
+
+                <h1 id="-about-me">About Me</h1>
+                <ul>
+                    <li>Hi, my name is Lai Wei (魏来) and I am a junior student at SJTU, majoring in physics. I have a strong interest in artificial intelligence, 
+                        and have been working on NLP during my bachelor studies. I dedicate to staying current with the latest developments in NLP and 
+                        am constantly seeking new ways to innovate in this area and push the boundaries 
+                        of what is possible with AI. As a creative and curious individual, I am eager to apply my skills and knowledge to real-world problems and make a meaningful impact in the industry.
+                        My recent research focuses on the improvement of BART(a pretrained language model)'s decoder for better
+                        performance on natural language understanding and I intend to apply for an AI master/phd degree next year.
+                    </li>
+                </ul>
+
+                <h1 id="-educations">Educations</h1>
+                <ul>
+                    <li>
+                        <strong>Shanghai Jiao Tong University</strong>
+                        <br>
+                        Bachelor of Science in Physics
+                    </li>
+                </ul>
+
+                <h1 id="-honors-and-awards">Honors and Awards</h1>
+                <ul>
+                    <li>2021 China Undergraduate Mathematical Contest in Model, Shanghai Division, First Prize</li>
+                    <li>2022 Mathematical Contest in Modeling, Second Prize</li>
+                    <li>2020 National Undergraduate Physics Experiment Competition, Third Prize</li>
+                    <li>2021 Shanghai Jiao Tong University Undergraduate B Scholarship</li>
+                    <li>2021 Shanghai Jiao Tong University, School of Physics and Astronomy, Online Class First Prize
+                        Scholarship
+                    </li>
+                    <li>2022 Shanghai Jiao Tong University Undergraduate B Scholarship</li>
+                    <li>2022 Shanghai Jiao Tong University Huawei Scholarship</li>
+                </ul>
+
+                
+
+                <h1 id="-research-and-work-experience">Research and Work Experience</h1>
+                <ul>
+                    <li>
+                        <strong>Research on improving the natural language understanding capabilities of the pre-trained
+                            model BART</strong>
+
+                        <br>
+                        Worked on modifying the decoder of BART to enhance its natural language understanding capabilities. Five different types of decoders streams, designed by 
+                        changing the attention masks and input ids, replace the initial BART decoder. The model is pretrained on wiki-text and book corpus, and fine-tuned on GLUE, SquaD, etc.
+                    </li>
+                    <li>
+                        <strong>Completed several data mining and NLP projects and basic NLP tutorials</strong>
+
+                        <br>
+                        Please visit my github repositories <a href="https://github.com/waltonfuture/NLP-projects"
+                                                               target="_blank">NLP-projects</a>
+                        and <a href="https://github.com/waltonfuture/NLP_basic" target="_blank">NLP-basic-tutorials</a>
+                        for details.
+                    </li>
+                </ul>
+
+                <h1 id="-interests-and-hobbies">Interests and Hobbies</h1>
+                <ul>
+                    <li>Electronic Organ (Grade 8)</li>
+                    <li>Basketball (Captain of College Basketball Team)</li>
+                    <li>Football (Member of College Football Team)</li>
+                </ul>
+
+            </section>
+        </div>
+    </article>
+</div>
+
+<script src="assets/js/main.min.js"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', "");
+</script>
+
+
+<script>
+    $(document).ready(function () {
+
+        var gsDataBaseUrl = 'https://raw.githubusercontent.com/waltonfuture/waltonfuture.github.io/'
+
+        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+            var totalCitation = data['citedby']
+            document.getElementById('total_cit').innerHTML = totalCitation;
+            var citationEles = document.getElementsByClassName('show_paper_citations')
+            Array.prototype.forEach.call(citationEles, element => {
+                var paperId = element.getAttribute('data')
+                var numCitations = data['publications'][paperId]['num_citations']
+                element.innerHTML = '| Citations: ' + numCitations;
+            });
+        });
+    })
+</script>
+
+
+</body>
+</html>
