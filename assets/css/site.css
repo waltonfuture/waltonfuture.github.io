@@ -72,8 +72,6 @@ h1 { font: 500 var(--text-name)/1.2 var(--serif); letter-spacing: -.6px; }
 .profile-links a span { font-size: var(--text-meta); }
 .portrait { align-self: center; }
 .portrait img { display: block; width: 100%; height: 282px; object-fit: cover; object-position: center 42%; border-radius: 110px 110px 10px 10px; }
-.portrait figcaption { display: flex; justify-content: space-between; align-items: center; font-size: var(--text-label); margin-top: 14px; color: var(--muted); }
-.portrait figcaption span:first-child { letter-spacing: 3px; }
 .section { border-top: 1px solid var(--line); padding: 40px 0; }
 .section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; margin-bottom: 24px; }
 .section-heading .eyebrow { margin-bottom: 10px; }
@@ -168,7 +166,6 @@ h2 { font: 500 var(--text-section)/1.3 var(--serif); letter-spacing: -.3px; }
   .profile-links a { font-size: var(--text-label); min-height: 40px; }
   .portrait { grid-column: 2; grid-row: 1 / 2; align-self: start; }
   .portrait img { height: 124px; border-radius: 50px 50px 5px 5px; }
-  .portrait figcaption { display: none; }
   .section { padding: 34px 0; }
   .section-heading { gap: 12px; flex-wrap: wrap; align-items: flex-start; margin-bottom: 20px; }
   .section-heading .eyebrow { font-size: var(--text-label); }
