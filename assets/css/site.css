@@ -133,6 +133,18 @@ h2 { font: 500 var(--text-section)/1.3 var(--serif); letter-spacing: -.3px; }
 .site-footer > div { display: flex; align-items: center; gap: 24px; }
 .site-footer .wordmark { font-size: 24px; }
 .footer-email, .site-footer > p { font-size: var(--text-label); color: var(--muted); }
+.contact-dialog { width: min(440px, calc(100% - 32px)); max-height: calc(100% - 32px); margin: auto; padding: 32px 28px 22px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); color: var(--body); box-shadow: 0 20px 80px #263b3826; }
+.contact-dialog::backdrop { background: #263b3873; }
+.contact-dialog h2 { padding-right: 28px; }
+.contact-close { position: absolute; top: 12px; right: 12px; width: 36px; height: 36px; display: grid; place-items: center; padding: 0; border: 0; border-radius: 5px; background: transparent; color: var(--muted); font-size: 24px; line-height: 1; }
+.contact-close:hover { background: var(--wash); color: var(--ink); }
+#contact-description { margin-top: 14px; font-size: var(--text-meta); }
+.contact-address { margin: 22px 0; padding: 12px; border: 1px solid var(--line); border-radius: 5px; background: var(--wash); color: var(--ink); font-size: var(--text-body); overflow-wrap: anywhere; user-select: all; -webkit-user-select: all; }
+.contact-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+.contact-actions > * { font-size: var(--text-meta); font-weight: 500; min-height: 44px; display: inline-flex; align-items: center; gap: 7px; }
+.copy-email { padding: 8px 16px; border: 1px solid var(--accent); border-radius: 4px; background: var(--accent); color: white; }
+.copy-email:hover { background: var(--accent-deep); }
+.contact-status { min-height: 24px; margin-top: 12px; font-size: var(--text-label); color: var(--accent); }
 @media (min-width: 1600px) {
   .hero { padding-top: 60px; padding-bottom: 56px; }
 }
@@ -212,7 +224,7 @@ h2 { font: 500 var(--text-section)/1.3 var(--serif); letter-spacing: -.3px; }
 }
 @media print {
   :root { --paper: #fff; --ink: #000; --body: #222; --muted: #444; --accent: #222; }
-  .site-header, .research-toolbar, .skip-link, .site-footer { display: none; }
+  .site-header, .research-toolbar, .skip-link, .site-footer, .contact-dialog { display: none; }
   .site-main { max-width: none; padding: 0; }
   .hero { padding: 20px 0 30px; }
   .publication[hidden] { display: grid !important; }

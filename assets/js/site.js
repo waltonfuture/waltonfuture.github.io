@@ -1,5 +1,37 @@
 'use strict';
 
+// Keep contact details usable even without a configured email application.
+const contactDialog = document.querySelector('#contact-dialog');
+if (contactDialog && typeof contactDialog.showModal === 'function') {
+  const contactStatus = contactDialog.querySelector('.contact-status');
+  const contactAddress = contactDialog.querySelector('#contact-address');
+  document.querySelectorAll('[data-contact]').forEach((link) => {
+    link.setAttribute('aria-haspopup', 'dialog');
+    link.setAttribute('aria-controls', contactDialog.id);
+    link.addEventListener('click', (event) => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      contactStatus.textContent = '';
+      contactDialog.showModal();
+    });
+  });
+  contactDialog.querySelector('.copy-email').addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(contactAddress.textContent.trim());
+      contactStatus.textContent = 'Email address copied.';
+    } catch {
+      contactStatus.textContent = 'Please select the address above and copy it manually.';
+    }
+  });
+  contactDialog.addEventListener('click', (event) => {
+    if (event.target !== contactDialog) return;
+    const bounds = contactDialog.getBoundingClientRect();
+    if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) {
+      contactDialog.close();
+    }
+  });
+}
+
 // All content remains visible when JavaScript is unavailable.
 const toolbar = document.querySelector('.research-toolbar');
 const filterButtons = [...document.querySelectorAll('[data-filter]')];

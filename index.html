@@ -29,7 +29,7 @@
       <nav class="site-nav" aria-label="Main navigation">
         <a href="#about">About</a><a href="#publications">Research</a><a href="#background">Background</a><a href="#honors">Honors</a>
       </nav>
-      <a class="header-contact" href="mailto:waltonfuture@sjtu.edu.cn">Get in touch <span aria-hidden="true">↗</span></a>
+      <a class="header-contact" href="#contact" data-contact>Get in touch <span aria-hidden="true">↗</span></a>
     </div>
   </header>
   <main id="main" class="site-main">
@@ -42,7 +42,7 @@
           <p>I am advised by <strong>Weiran Huang</strong> at SJTU and jointly trained at Zhongguancun Academy with <strong>Chenglin Liu</strong>. I currently intern with the Base Model Group at Zhipu AI.</p>
         </div>
         <div class="profile-links" aria-label="Contact and academic profiles">
-          <a class="primary-link" href="mailto:waltonfuture@sjtu.edu.cn">Email <span aria-hidden="true">↗</span></a><a href="https://scholar.google.com/citations?user=ic3N84oAAAAJ&amp;hl=en&amp;oi=sra" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a><a href="https://github.com/waltonfuture" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.semanticscholar.org/author/Lai-Wei/2281903333" target="_blank" rel="noopener noreferrer">Semantic Scholar <span aria-hidden="true">↗</span></a>
+          <a class="primary-link" href="#contact" data-contact>Email <span aria-hidden="true">↗</span></a><a href="https://scholar.google.com/citations?user=ic3N84oAAAAJ&amp;hl=en&amp;oi=sra" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a><a href="https://github.com/waltonfuture" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.semanticscholar.org/author/Lai-Wei/2281903333" target="_blank" rel="noopener noreferrer">Semantic Scholar <span aria-hidden="true">↗</span></a>
         </div>
       </div>
       <figure class="portrait">
@@ -200,6 +200,14 @@
       </section>
     </div>
   </main>
-  <footer class="site-footer"><div><a class="wordmark" href="#about">Lai Wei<span class="wordmark-dot" aria-hidden="true">.</span></a><a class="footer-email" href="mailto:waltonfuture@sjtu.edu.cn">waltonfuture@sjtu.edu.cn</a></div><p><a href="#about">Back to top ↑</a></p></footer>
+  <footer class="site-footer" id="contact"><div><a class="wordmark" href="#about">Lai Wei<span class="wordmark-dot" aria-hidden="true">.</span></a><a class="footer-email" href="mailto:waltonfuture@sjtu.edu.cn" data-contact>waltonfuture@sjtu.edu.cn</a></div><p><a href="#about">Back to top ↑</a></p></footer>
+  <dialog class="contact-dialog" id="contact-dialog" aria-labelledby="contact-title" aria-describedby="contact-description">
+    <form method="dialog"><button class="contact-close" aria-label="Close contact details" type="submit">×</button></form>
+    <h2 id="contact-title">Get in touch<span class="heading-period">.</span></h2>
+    <p id="contact-description">Copy my address to your preferred email service, or open your email app.</p>
+    <p class="contact-address" id="contact-address">waltonfuture@sjtu.edu.cn</p>
+    <div class="contact-actions"><button class="copy-email" type="button" autofocus>Copy email</button><a href="mailto:waltonfuture@sjtu.edu.cn">Open email app <span aria-hidden="true">↗</span></a></div>
+    <p class="contact-status" role="status" aria-live="polite"></p>
+  </dialog>
 </body>
 </html>
